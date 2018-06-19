@@ -1,10 +1,10 @@
 import tkinter as tk
-import blank
+import BotBase as b
 
 
 def CreateBot():
     f = open("bot.py","w")
-    f.write(blank.s)
+    f.write(b.s)
 
 class App(tk.Frame):
     def __init__(self, master=None):
