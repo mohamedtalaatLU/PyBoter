@@ -15,11 +15,11 @@ class App(tk.Frame):
     
 
     def create_widgets(self):
-        self.hi_there = tk.Button(self)
-        self.hi_there["text"] = "Creat \n a \n Bot"
-        self.hi_there["command"] = CreateBot()
-        self.hi_there.pack(side="top")
-        self.hi_there.size()
+        self.widg = tk.Button(self)
+        self.widg["text"] = "Creat \n a \n Bot"
+        self.widg["command"] = CreateBot()
+        self.widg.pack(side="top")
+        self.widg.size()
         self.quit = tk.Button(self, text="QUIT", fg="red", bg = "yellow", command=root.destroy)
         self.quit.pack(side="bottom")
 
