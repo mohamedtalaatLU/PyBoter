@@ -2,10 +2,6 @@ import tkinter as tk
 import BotBase as b
 
 
-def CreateBot():
-    f = open("bot.py","w")
-    f.write(b.s)
-
 class App(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
@@ -17,7 +13,8 @@ class App(tk.Frame):
     def create_widgets(self):
         self.widg = tk.Button(self)
         self.widg["text"] = "Creat \n a \n Bot"
-        self.widg["command"] = CreateBot()
+        f = open("bot.py","w")
+        self.widg["command"] = f.write(b.s)
         self.widg.pack(side="top")
         self.widg.size()
         self.quit = tk.Button(self, text="QUIT", fg="red", bg = "yellow", command=root.destroy)
