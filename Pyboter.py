@@ -20,9 +20,10 @@ class App(tk.Frame):
         self.butt = tk.Buttin(self)
         self.butt["text"] = "Enable anti-spam"
         self.butt["command"] = None #this is not implemented yet
-        self.butt.pack(side="right")
+        self.butt.pack(side="right"
         self.butt1 = tk.Button(self)
         self.butt1["text"] = "Enable SQlite Based"
+        self.butt1.pack(side = "left"
         self.quit = tk.Button(self, text="QUIT", fg="red", bg = "yellow", command=root.destroy)
         self.quit.pack(side="bottom")
 
