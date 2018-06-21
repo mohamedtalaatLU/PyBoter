@@ -17,13 +17,14 @@ class App(tk.Frame):
         self.widg["command"] = f.write(b.s)
         self.widg.pack(side="top")
         self.widg.size()
-        self.butt = tk.Buttin(self)
+        self.butt = tk.Button(self)
         self.butt["text"] = "Enable anti-spam"
         self.butt["command"] = None #this is not implemented yet
-        self.butt.pack(side="right"
+        self.butt.pack(side="right")
         self.butt1 = tk.Button(self)
-        self.butt1["text"] = "Enable SQlite Based"
-        self.butt1.pack(side = "left"
+        self.butt1["text"] = "Enable SQl Based"
+        self.butt1.pack(side = "left")
+        self.butt2 = tk.button(self, text ="Change game the bot is playing")
         self.quit = tk.Button(self, text="QUIT", fg="red", bg = "yellow", command=root.destroy)
         self.quit.pack(side="bottom")
 
