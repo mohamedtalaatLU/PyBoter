@@ -11,14 +11,12 @@ class App(tk.Frame):
 
     def create_widgets(self):
         self.widg = tk.Button(self)
-        self.widg["text"] = "Creat \n a \n Bot"
+        self.widg["text"] = "Create \n a \n Bot"
         f = open("bot.py","w")
         self.widg["command"] = f.write(b.s)
         self.widg.pack(side="top")
         self.widg.size()
-        self.butt = tk.Button(self)
-        self.butt["text"] = "Enable anti-spam"
-        self.butt["command"] = None #this is not implemented yet
+        self.butt = tk.Button(self, text= "Enable anti-spam", command= None)#the command is not implemented yet
         self.butt.pack(side="right")
 
         def show_box():
