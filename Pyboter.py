@@ -21,8 +21,12 @@ class App(tk.Frame):
         self.butt["text"] = "Enable anti-spam"
         self.butt["command"] = None #this is not implemented yet
         self.butt.pack(side="right")
-        self.butt1 = tk.Button(self)
-        self.butt1["text"] = "Enable SQl Based"
+        self.butt1 = tk.Button(self, text="DB based bot", command = Based = True)
+        if Based == True:
+            mstr = Tk()
+            Label(mstr, text = "SQL host or IP").grid(row = 3)
+            e = Entry(mstr)
+            e.grid(row = 3 , column =, 3
         self.butt1.pack(side = "left")
         self.butt2 = tk.button(self, text ="Change game the bot is playing")
         self.quit = tk.Button(self, text="QUIT", fg="red", bg = "yellow", command=root.destroy)
